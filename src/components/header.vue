@@ -7,16 +7,16 @@
       <a href="#" class="anyMore"></a>
     </div>
     <div class="bottom">
-      <nav class="nav">
-        <a href="#" class="active">首&nbsp;&nbsp;页</a>
-        <a href="#">服饰城</a>
-        <a href="#">狗狗主粮</a>
-        <a href="#">医疗保健</a>
-        <a href="#">零食玩具</a>
-        <a href="#">日用外出</a>
-        <a href="#">美容香波</a>
-      </nav>
-    </div>
+        <nav class="nav">
+          <a href="#" class="active">首&nbsp;&nbsp;页</a>
+          <a href="#">服饰城</a>
+          <a href="#">狗狗主粮</a>
+          <a href="#">医疗保健</a>
+          <a href="#">零食玩具</a>
+          <a href="#">日用外出</a>
+          <a href="#">美容香波</a>
+        </nav>
+      </div>
   </header>
 </template>
 
@@ -33,6 +33,7 @@ export default {
   $rem = 37.5rem
 .header
   position fixed
+  z-index 3
   background-color: #fff
   top 0
   width: 100%

@@ -18,6 +18,7 @@
   $rem = 37.5rem
 .foot
   position fixed
+  z-index 3
   background-color: #fff
   bottom 0
   display flex
@@ -40,7 +41,7 @@
     &:nth-of-type(4)>span
       background-position 45% 102%
 
-      
 
-  
+
+
 </style>

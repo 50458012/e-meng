@@ -1,5 +1,29 @@
 {
   "presets": [
+    ["es2015", { "modules": false }]
+  ],
+  "plugins": [["component", [
+    {
+      "libraryName": "element-ui",
+      "styleLibraryName": "theme-chalk"
+    }
+  ]]]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*{
+  "presets": [
     ["env", {
       "modules": false,
       "targets": {
@@ -8,17 +32,11 @@
     }],
     "stage-2"
   ],
-  "plugins": [
-    ["transform-runtime"],
-    ["component", [{
-      "libraryName": "mint-ui",
-      "style": true
-    }]
-    ]],
+  "plugins": ["transform-runtime"],
   "env": {
     "test": {
       "presets": ["env", "stage-2"],
       "plugins": ["istanbul"]
     }
   }
-}
+}*/
