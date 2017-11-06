@@ -1,16 +1,29 @@
 <template>
   <div id="app">
-    <upper></upper>
+    <upper :menus="home.menus"></upper>
     <middle></middle>
     <bottom></bottom>
   </div>
 </template>
 
 <script>
+  import axios from 'axios'
   import upper from './components/header.vue'
   import bottom from './components/foot.vue'
   import middle from './components/middle.vue'
 export default {
+  data(){
+    return{
+      home:{}
+    }
+  },
+
+    mounted(){
+      axios.get('/api/main').then(res=>{
+        this.home = res.data
+      }).catch(err=>console.log(err))
+    },
+
   components:{upper,bottom,middle}
 }
 </script>

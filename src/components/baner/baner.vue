@@ -2,16 +2,16 @@
         <div>
           <Swipe class="swipe" :auto="4000">
             <SwipeItem>
-              <a class="swipeItem" href="#"> <img src="./guonei.jpg"></a>
+              <a class="swipeItem" href="javascript:;"> <img src="./guonei.jpg"></a>
             </SwipeItem>
             <SwipeItem>
-              <a  class="swipeItem" href="#"> <img src="./haiwai.jpg"></a>
+              <a  class="swipeItem" href="javascript:;"> <img src="./haiwai.jpg"></a>
             </SwipeItem>
             <SwipeItem>
-              <a class="swipeItem" href="#"> <img src="./yushou.jpg"></a>
+              <a class="swipeItem" href="javascript:;"> <img src="./yushou.jpg"></a>
             </SwipeItem>
             <SwipeItem>
-              <a class="swipeItem" href="#"> <img src="./zheshangzhe.jpg"></a>
+              <a class="swipeItem" href="javascript:;"> <img src="./zheshangzhe.jpg"></a>
             </SwipeItem>
 
           </Swipe>

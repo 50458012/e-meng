@@ -1,7 +1,7 @@
 <template>
            <ul class="list">
              <li v-if="goods" v-for="(good,index) in goods">
-               <a href="#">
+               <a href="javascript:;">
                  <!--:src="good.img"-->
                  <img src="../../img/listImg/baojin/bj-1.jpg">
                 <p class="name">{{good.name}}</p>

@@ -1,9 +1,9 @@
 <template>
         <footer class="foot">
-          <a href="#"><span></span></a>
-          <a href="#"><span></span></a>
-          <a href="#"><span></span></a>
-          <a href="#"><span></span></a>
+          <a href="javascript:;"><span></span></a>
+          <a href="javascript:;"><span></span></a>
+          <a href="javascript:;"><span></span></a>
+          <a href="javascript:;"><span></span></a>
         </footer>
 </template>
 
