@@ -1,19 +1,9 @@
 <template>
         <div>
           <Swipe class="swipe" :auto="4000">
-            <SwipeItem>
-              <a class="swipeItem" href="javascript:;"> <img src="./guonei.jpg"></a>
+            <SwipeItem v-for="(item,index) in baner" :key="index">
+              <a class="swipeItem" :href="item.target.param"> <img :src="item.image"></a>
             </SwipeItem>
-            <SwipeItem>
-              <a  class="swipeItem" href="javascript:;"> <img src="./haiwai.jpg"></a>
-            </SwipeItem>
-            <SwipeItem>
-              <a class="swipeItem" href="javascript:;"> <img src="./yushou.jpg"></a>
-            </SwipeItem>
-            <SwipeItem>
-              <a class="swipeItem" href="javascript:;"> <img src="./zheshangzhe.jpg"></a>
-            </SwipeItem>
-
           </Swipe>
         </div>
 </template>
@@ -22,6 +12,7 @@
   import { Swipe, SwipeItem } from 'mint-ui';
 
       export default {
+        props:{baner:Array},
             data() {
                   return {}
             },

@@ -8,6 +8,7 @@ export  function rem(){
 
 export  function nav($refs){
   let {wrap,list} = $refs
+  list.children[0].classList.add('active')
   list.style.width = list.children[0].offsetWidth*list.children.length + 'px'
   let starX, posX , endX,Width = document.documentElement.clientWidth;
   wrap.addEventListener('touchstart',function (event) {
@@ -34,10 +35,10 @@ export  function nav($refs){
     }
     if (endX > 0) {
       endX = 0;
-      list.style.transition = 'all 1s cubic-bezier(.18,1.7,.81,1.83)'
+      list.style.transition = 'transform .3s cubic-bezier(.18,1.7,.81,1.83)'
       transFormCss(list,'translateX',endX)
     } else if (endX < (Width - list.offsetWidth)) {
-      list.style.transition = 'all 1s cubic-bezier(.18,1.7,.81,1.83)'
+      list.style.transition = 'transform .3s cubic-bezier(.18,1.7,.81,1.83)'
       endX = Width - list.offsetWidth
       transFormCss(list,'translateX',endX)
     }

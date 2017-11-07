@@ -32,7 +32,7 @@
       display inline-block
       width (42/$rem)
       height (40/$rem)
-      background url("../img/img.png") no-repeat
+      background url("/static/img/img.png") no-repeat
       background-size 530%
     &:nth-of-type(2)>span
       background-position 45% 34%

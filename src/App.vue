@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <upper :menus="home.menus"></upper>
-    <middle></middle>
+    <middle :datas="home.datas"></middle>
     <bottom></bottom>
   </div>
 </template>
