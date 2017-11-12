@@ -63,10 +63,10 @@
 </template>
 
 <script>
-  import baner from './baner/baner.vue'
-  import list from './list/list.vue'
-  import dapai from './list/dapai.vue'
-  import qiangList from './list/fengqiang.vue'
+  import baner from './baner.vue'
+  import list from './list.vue'
+  import dapai from './dapai.vue'
+  import qiangList from './fengqiang.vue'
 
 export default {
     props:{datas:Array},
@@ -80,6 +80,8 @@ export default {
 <style lang="stylus" rel="stylesheet/stylus">
   $rem = 37.5rem
 .content
+  transform translateZ(3px)
+  padding (86/$rem) 0 (55/$rem) 0
   .titleImg1, .mainImg
     width 100%
     margin-bottom (-4/$rem)

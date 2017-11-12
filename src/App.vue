@@ -1,35 +1,27 @@
 <template>
   <div id="app">
-    <upper :menus="home.menus"></upper>
-    <middle :datas="home.datas"></middle>
-    <bottom></bottom>
+    <footNav></footNav>
+    <keep-alive>
+      <router-view></router-view>
+    </keep-alive>
   </div>
 </template>
 
 <script>
-  import axios from 'axios'
-  import upper from './components/header.vue'
-  import bottom from './components/foot.vue'
-  import middle from './components/middle.vue'
+  import footNav from './components/foot.vue'
 export default {
   data(){
     return{
       home:{}
     }
   },
-
-    mounted(){
-      axios.get('/api/main').then(res=>{
-        this.home = res.data
-      }).catch(err=>console.log(err))
-    },
-
-  components:{upper,bottom,middle}
+  components:{footNav}
 }
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
   $rem = 37.5rem
 #app
-  padding (86/$rem) 0 (55/$rem) 0
+  width 100%
+  height 100%
 </style>

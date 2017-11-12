@@ -1,9 +1,9 @@
 <template>
         <footer class="foot">
-          <a href="javascript:;"><span></span></a>
-          <a href="javascript:;"><span></span></a>
-          <a href="javascript:;"><span></span></a>
-          <a href="javascript:;"><span></span></a>
+          <router-link to="./home"><span></span></router-link>
+          <router-link to="./classify"><span></span></router-link>
+          <router-link to="./shopCart"><span></span></router-link>
+          <router-link to="./mine"><span></span></router-link>
         </footer>
 </template>
 
@@ -18,7 +18,7 @@
   $rem = 37.5rem
 .foot
   position fixed
-  z-index 3
+  z-index 2
   background-color: #fff
   bottom 0
   display flex
